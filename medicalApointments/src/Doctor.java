@@ -5,11 +5,12 @@ public class Doctor {
 
     public Doctor() {
         System.out.println("Building the Doctor Object");
-        id++;}
+        }
 
-    public Doctor( String name) {
+    public Doctor( String name, String specialty) {
         this.name = name;
-        System.out.println("Building the Doctor Object with name: " + name);
+        this.specialty = specialty;
+        System.out.println("Building the Doctor Object with name: " + name + " and specialty: " + specialty);
     }
     public void showName() {
          System.out.println(name);
