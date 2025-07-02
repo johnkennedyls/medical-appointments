@@ -10,6 +10,18 @@ public class Doctor extends User {
         System.out.println("Building the Doctor Object with name: " + name + " and specialty: " + speciality);
     }
 
+    public String getSpeciality() {
+        return speciality;
+    }
+    public void setSpeciality(String speciality) {
+        this.speciality = speciality;
+    }
+    @Override
+    public String toString() {
+        return super.toString() + "Doctor{" + "speciality=" + speciality + '}' +
+                "\nAvailable Appointments: " + availableAppointments.toString();
+    }
+
     ArrayList<AvailableAppointment> availableAppointments = new ArrayList<>();
 public void addAvailableAppointment(Date date, String time) {
         availableAppointments.add(new Doctor.AvailableAppointment(date, time));
@@ -51,6 +63,14 @@ public void addAvailableAppointment(Date date, String time) {
 
         public void setTime(String time) {
             this.time = time;
+        }
+        @Override
+        public String toString() {
+            return "AvailableAppointment{" +
+                    "id=" + id +
+                    ", date=" + date +
+                    ", time='" + time + '\'' +
+                    '}';
         }
     }
 }
