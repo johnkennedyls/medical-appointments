@@ -1,3 +1,5 @@
+package model;
+
 public class Patient extends User {
 
 
@@ -54,7 +56,7 @@ public class Patient extends User {
 
     @Override
     public String toString() {
-        return "Patient{" +
+        return "model.Patient{" +
                 "name='" + getName() + '\'' +
                 ", email='" + getEmail() + '\'' +
                 ", birthDay='" + birthDay + '\'' +

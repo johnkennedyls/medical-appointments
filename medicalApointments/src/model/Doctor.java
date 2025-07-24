@@ -1,3 +1,5 @@
+package model;
+
 import java.util.ArrayList;
 import java.util.Date;
 
@@ -7,7 +9,7 @@ public class Doctor extends User {
 
     public Doctor( String name, String email) {
         super(name, email);
-        System.out.println("Building the Doctor Object with name: " + name + " and specialty: " + speciality);
+        System.out.println("Building the model.Doctor Object with name: " + name + " and specialty: " + speciality);
     }
 
     public String getSpeciality() {
@@ -18,7 +20,7 @@ public class Doctor extends User {
     }
     @Override
     public String toString() {
-        return super.toString() + "Doctor{" + "speciality=" + speciality + '}' +
+        return super.toString() + "model.Doctor{" + "speciality=" + speciality + '}' +
                 "\nAvailable Appointments: " + availableAppointments.toString();
     }
 

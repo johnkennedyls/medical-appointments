@@ -1,8 +1,9 @@
-import ui.UIMenu;
+import model.Doctor;
+import model.Patient;
+import model.User;
 
 import java.util.Date;
 
-import static ui.UIMenu.*;
 public class Main {
     public static void main(String[] args) {
        Doctor myDoctor = new Doctor("Jim", "jim@toString.com");
@@ -11,7 +12,7 @@ public class Main {
         myDoctor.addAvailableAppointment(new Date(), "12:00 PM");
 
         System.out.println(myDoctor);
-
+        User user = new Doctor("Jim", "jim@toString.com");
 
      Patient patient = new Patient("Yeison", "yeison123@gmail.com");
         patient.setBirthDay("1990-01-01");
