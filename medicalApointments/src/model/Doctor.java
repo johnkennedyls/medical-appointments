@@ -24,6 +24,13 @@ public class Doctor extends User {
                 "\nAvailable Appointments: " + availableAppointments.toString();
     }
 
+    @Override
+    public void showDataUser() {
+        System.out.println("Empleado del Hospital: Cruz Roja");
+        System.out.println("Departamento: Cancerología" );
+
+    }
+
     ArrayList<AvailableAppointment> availableAppointments = new ArrayList<>();
 public void addAvailableAppointment(Date date, String time) {
         availableAppointments.add(new Doctor.AvailableAppointment(date, time));

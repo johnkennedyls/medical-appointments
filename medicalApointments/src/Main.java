@@ -13,15 +13,11 @@ public class Main {
 
         System.out.println(myDoctor);
         User user = new Doctor("Jim", "jim@toString.com");
+        user.showDataUser();
 
-     Patient patient = new Patient("Yeison", "yeison123@gmail.com");
-        patient.setBirthDay("1990-01-01");
-        patient.setWeight(70.5);
-        patient.setHeight(1.75);
-        patient.setBlood("O+");
-        patient.setPhoneNumber("1234567890");
+        User userPa = new Patient("Jim", "jim@toString.com");
+        user.showDataUser();
 
-        System.out.println(patient);
 
 
 

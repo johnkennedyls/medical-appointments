@@ -66,5 +66,12 @@ public class Patient extends User {
                 ", phoneNumber='" + getPhoneNumber() + '\'' +
                 '}';
     }
+
+    @Override
+    public void showDataUser() {
+        System.out.println("Patient Information:");
+        System.out.println("Name: " + getName());
+        System.out.println("Historial Clínico");
+    }
 }
 

@@ -8,6 +8,12 @@ public class Nurse extends User{
         System.out.println("Building the Nurse Object with name: " + name + " and speciality: " + speciality);
     }
 
+    @Override
+    public void showDataUser() {
+        System.out.println("Empleado del Hospital: General Hospital");
+        System.out.println("Department: Nursing");
+    }
+
     public String getSpeciality() {
         return speciality;
     }
